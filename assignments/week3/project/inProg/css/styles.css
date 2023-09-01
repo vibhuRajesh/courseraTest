@@ -1,0 +1,113 @@
+/*Global Style across page and all pages */
+
+body {
+	font-size: 16px;		
+	color: #fff; 						/*white font color */
+	background-color: #61122f;
+	font-family: 'Oxygen', sans-serif;		/*Default font family downloaded from google font api */
+
+}
+
+
+/*background color for navigation bar in header*/
+/*Using id attribute */
+
+#header-nav {
+
+	background-color: #f6b319;
+
+	/*Remove rounded corners frmo nav bar*/
+	border-radius: 0px;
+	border:0px;
+
+}
+
+
+
+#logo_img {
+	background: url('../images/restaurant-logo_large.png') no-repeat;
+	width: 150px;
+	height: 150px;
+	margin: 10px 15px 10px 0;
+}
+
+
+.navbar-brand {
+	padding-top: 25px;
+}
+
+
+/*Nav Bar name itself : h1 = restaurant name */
+.navbar-brand h1 {
+	font-family: 'Lora', serif;
+	color: #557c3e;
+	font-size: 1.5em;
+
+	text-transform: uppercase;
+	
+	font-weight: bold;
+
+	/* params: <HORIZ.shadow> = 1px <VERT.shadow> = 1px <BLUR radius> = 1px <COL> = #222 */
+	text-shadow: 1px 1px 1px #222;
+
+	margin-top: 0px;
+	margin-bottom:0px;
+
+	line-height: 0.75;
+
+}
+
+/* Get rid of text decoration under link: no underlining */
+.navbar-brand a:hover, .navbar-brand a:focus {
+	text-decoration: none;
+}
+
+
+
+.navbar-brand p {
+	text-transform: uppercase;
+	color: #000;
+	font-size: 0.75em;
+	margin-top: 15px;
+}
+
+/*Vertically center with image */
+.navbar-brand p span {
+	vertical-align: middle;
+}
+
+
+/*Unordered list for dropdown menu */
+#nav-list {
+	margin-top: 15px;
+}
+
+/*Color for links within list*/
+#nav-list a {
+	color: #951C49;
+	text-align: center;
+}
+
+/*Hovering over links makes them white */
+#nav-list a:hover {
+	color:#E7E7E7;
+}
+
+#nav-list a span {
+	font-size: 1.8em;
+}
+
+#phone {
+	margin-top: 5px;
+}
+
+#phone a {
+	text-align: right;
+	padding-bottom: 0;
+}
+
+#phone div {
+	color: #557c3E;
+	text-align: right;
+	padding-right: 15px;
+}
