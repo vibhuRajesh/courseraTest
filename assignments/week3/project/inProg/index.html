@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>David Chu's China Bistro</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -13,97 +13,85 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
-
-
-
-    <style type="text/css">
-
-    #top, #bottom {
-      width: 200px;
-      height: 200px;
-      background-color: maroon;
-      border: 1px solid red;
-    }
-
-    </style>
   </head>
+
 <body>
 
   <header>
 
-    <nav id = "header-nav" class = "navbar navbar-default">
+    <nav id="header-nav" class="navbar navbar-default">
 
-    <!-- Wrapper class for navigation bar formatting within overall navigation bar space-->
-    
-    <div class = "container">
+      <!-- Wrapper class for navigation bar formatting within overall navigation bar space-->
+      
+      <div class="container"
+>
+        <!--Bootstrap class for navbar header-->
+        <div class="navbar-header">
 
-      <!--Bootstrap class for navbar header-->
-      <div class = "navbar-header">
-
-        <!-- make entire brand image clickable box -->
-        <a href = "index.html" class = "pull-left visible-md visible-lg">
-          <div id = "logo_img" alt = "Logo image"></div>
-        </a>
-
-        <!-- Navigation bar title setup -->
-        <div class = "navbar-brand">
-
-          <a href = "index.html">
-            <h1>David Chu's Chinese Bistro</h1>
+          <!-- make entire brand image clickable box -->
+          <a href="index.html" class="pull-left visible-md visible-lg">
+            <div id="logo_img" alt="Logo image"></div>
           </a>
 
-          <p>
-            <img src = "images\star-k-logo.png" alt = "Kosher">
-            <span>Kosher Certified</span>
-          </p>
+          <!-- Navigation bar title setup -->
+          <div class="navbar-brand">
+            <a href="index.html"><h1>David Chu's Chinese Bistro</h1></a>
+            <p>
+              <img src="images\star-k-logo.png" alt="Kosher certification">
+              <span>Kosher Certified</span>
+            </p>
+          </div>
+
+          <!--changes to collapsible if on mobile site size -->
+            <!-- data-target -> element later on -->
+          <button type = "button" class = "navbar-toggle collapsed" data-toggle ="collapse" data-target = "#collapsable-nav" aria-expanded = "false">
+            <span class = "sr-only">Toggle navigation</span> 
+
+            <span class = "icon-bar"></span>
+            <span class = "icon-bar"></span>
+            <span class = "icon-bar"></span>
+          </button>
 
         </div>
 
-        <!--changes to collapsible if on mobile site size -->
-          <!-- data-target -> element later on -->
-        <button type = "button" class = "navbar-toggle collapsed" data-toggle = "collapse" data-target ="#collapsable-nav" aria-expanded = "false">
-          <span class = "sr-only">Toggle navigation</span> 
-          <span class = "icon-bar"></span>
-          <span class = "icon-bar"></span>
-          <span class = "icon-bar"></span>
-        </button>
+        <!-- Container div that holds all nav menu items -->
 
-    </div>
+        <div id = "#collapsable-nav" class = "collapse navbar-collapse">
 
-    <!-- Container div that holds all menu items -->
+          <!--Unordered list for navigation list-->
+          <!-- Each item contains <a> that redirects to other page on site -->
+          <ul id = "nav-list" class = "nav navbar-nav navbar-right"> <!-- aligns to right -->
+            
+            <li>
+              <a href = "menu-categories.html">
+                <span class = "glyphicon glyphicon-cutlery"></span><br class = "hidden-xs"> Menu</a>
+            </li>
 
-    <div id = "#collapsable-nav" class = "collapse navbar-collapse">
+            <li>
+              <a href = "#">
+                <span class = "glyphicon glyphicon-info-sign"></span><br class = "hidden-xs"> About</a>
+            </li>
 
-      <!--Unordered list for navigation list-->
-      <!-- Each item contains <a> that redirects to other page on site -->
-      <ul id = "nav-list" class = "nav navbar-nav navbar-right"> <!-- aligns to right -->
-        
-        <li>
-          <a href = "menu-categories.html">
-            <span class = "glyphicon glyphicon-cutlery"></span><br class = "hidden-xs"> Menu</a>
-        </li>
-        <li>
-          <a href = "#">
-            <span class = "glyphicon glyphicon-info-sign"></span><br class = "hidden-xs"> About</a>
-        </li>
-        <li>
-          <a href = "#">
-            <span class = "glyphicon glyphicon-certificate"></span><br class = "hidden-xs"> Awards</a>
-        </li>
-        
-        <!-- special list item for phone element not displayed with menu when xs size-->
-        <li id = "phone" class = "hidden-xs">
-          <a href = "tel:414-248-7982">
-          <span> 414-248-7982 </span><div>* We Deliver</div></a>
-        </li>
-      </ul>
+            <li>
+              <a href = "#">
+                <span class = "glyphicon glyphicon-certificate"></span><br class = "hidden-xs"> Awards</a>
+            </li>
+            
+            <!-- special list item for phone element not displayed with menu when xs size-->
+            <li id = "phone" class = "hidden-xs">
+              <a href = "tel:414-248-7982">
+                <span> 414-248-7982 </span><div>* We Deliver</div></a>
+            </li>
 
+          </ul>
 
+        </div>
 
+      </div>
 
     </nav>
 
-  </header>
+</header>
 
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-2.1.4.min.js"></script>
